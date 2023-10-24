@@ -3,7 +3,6 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
-        <custom-favicons>instagram-fav.png</custom-favicons>
         <product-web-url>https://spinsha.re/</product-web-url>
         <header-logo>logo_colored_ondark.svg</header-logo>
     </variables>
