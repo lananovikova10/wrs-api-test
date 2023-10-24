@@ -4,7 +4,8 @@
 
     <variables>
         <product-web-url>https://spinsha.re/</product-web-url>
-        <header-logo>logo_colored_ondark.svg</header-logo>
+        <header-logo>birdie.png</header-logo>
+        <custom-favicons>hhh</custom-favicons>
     </variables>
     <build-profile instance="h">
         <variables>
