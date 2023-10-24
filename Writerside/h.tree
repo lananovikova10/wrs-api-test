@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="h"
-                 name="helpp"
+                 name="help"
                  start-page="starter-topic.md">
 
     <toc-element topic="API-Reference.md"/>
