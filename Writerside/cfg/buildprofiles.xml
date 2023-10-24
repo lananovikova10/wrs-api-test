@@ -2,10 +2,11 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <custom-favicons>https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png</custom-favicons>
+    </variables>
     <build-profile instance="h">
         <variables>
-            <custom-favicons>https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png</custom-favicons>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
