@@ -3,7 +3,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
-        <custom-favicons>https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png</custom-favicons>
+        <custom-favicons>instagram-fav.png</custom-favicons>
         <product-web-url>https://spinsha.re/</product-web-url>
     </variables>
     <build-profile instance="h">
