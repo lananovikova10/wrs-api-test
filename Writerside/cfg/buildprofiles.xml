@@ -4,6 +4,7 @@
 
     <variables>
         <custom-favicons>https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png</custom-favicons>
+        <product-web-url>https://spinsha.re/</product-web-url>
     </variables>
     <build-profile instance="h">
         <variables>
