@@ -5,6 +5,7 @@
     <variables>
         <custom-favicons>instagram-fav.png</custom-favicons>
         <product-web-url>https://spinsha.re/</product-web-url>
+        <header-logo>logo_colored_ondark.svg</header-logo>
     </variables>
     <build-profile instance="h">
         <variables>
