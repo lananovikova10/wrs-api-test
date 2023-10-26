@@ -8,4 +8,7 @@
 
     <toc-element topic="API-Reference.md"/>
     <toc-element topic="starter-topic.md"/>
+    <toc-element topic="Empty-MD-Topic.md"/>
+    <toc-element topic="Empty-XML-Topic.topic"/>
+    <toc-element topic="Structural-wrapping.topic"/>
 </instance-profile>

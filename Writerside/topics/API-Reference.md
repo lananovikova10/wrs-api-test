@@ -17,6 +17,8 @@ cmd [OPTIONS]
 
 <api-endpoint openapi-path="./../openapi.yaml" endpoint="/v1/accounts" method="GET"/>
 
+
+
 <seealso>
     <!--Provide links to related how-to guides, overviews, and tutorials.-->
 </seealso>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Empty XML Topic" id="Empty-XML-Topic">
+
+<p>This topic contains examples for Grazie Professional features.</p>
+<chapter id="gec" title="Grammar correction">
+    <p id="grammar-error-correction">Although LanguageTool is a great engine for catching grammar and stylistic mistakes, it is rule-based, meaning that it depends on a set of rules that humans define.
+        By properly training our GEC model, we've managed to outperform LanguageTool and catch a lot more mistakes.</p>
+    <p>It has some advanced grammar checks under the hood, like consistent verb tense usage, adjective/adverb confusion, relative clause commas, and so on.</p>
+    <!--Below Grazie should detect 3 grammar errors: missing verb, see->seen and This->These.-->
+    <p id="grammar-error-simple">I am see people. This people big.</p>
+    <!--Below Grazie should detect the incorrect hyphenation.-->
+    <p id="grammar-error-complex">Grazie is to improved the quality of grammar error correction.
+        It might be a destination you stumbled across on a must see list on a travel blog or heard was a can't miss landmark.</p>
+    <!--Below Grazie should detect 3 spelling errors-->
+    <p id="spelling">Grazie also detects spelling errors and mistypes. For example, arguement, absense, adress. </p>
+</chapter>
+<chapter id="completion" title="Natural language completion">
+    <p>Grazie Professional takes the context of what you have written before and suggests words, phrases, or even whole sentences as you type. It works as an invisible writing assistant and helps you remove writer's block or get an alternative view on the subject.
+    </p>
+    <p>So when you put the cursor after the previous word it should display the suggestion either in the line
+        or in the drop-down, depending on selected setting, and complete the suggestion by Tab. Both modes should work in
+        <path>
+            .topic
+        </path> files.</p>
+</chapter>
+<chapter id="POS-highligting" title="Part-of-speech highlighting">
+    <p><control>Trim and tighten</control>: You can employ syntax highlighting which helps you spot weak verbs, unwanted repetitions, and eliminate clutter.
+        Together with Style Check it'll make you a more persuasive writer.</p>
+    <p>It can highlight adjectives, nouns, verbs
+        and the like in different colors, which may prevent overdecorating.</p>
+    <p id="example-pos">In the 1960s, artificial heart devices did not fit well and tended to obstruct the flow of venous blood into the right atrium.
+    </p>
+    <p>Right-click anywhere in the editor and select <control>Grazie Professional Highlighting | Enable All</control>.</p>
+    <p>Grazie should highlight all nouns, verbs, adjectives, adverbs, and conjunctions with different colors.</p>
+    <p>If you select a specific part of speech, for example, adjective, it should highlight only adjectives with one color.</p>
+</chapter>
+<chapter id="str-wr" title="Structural wrapping">
+    <p>Semantic text wrapping that breaks lines at sentences and clauses for improved readability and more stable VCS history.</p>
+</chapter>
+<chapter id="synt-transformation" title="Syntax transformations">
+    <chapter id="p-to-a" title="Passive to active voice">
+        <p>Grazie Professional offers context actions for advanced syntactic transformations, such as,
+            converting passive voice to active voice, moving around similar parts of a sentence, expanding contractions, and so on.
+        </p>
+        <!--Step on the verb, press Alt+Enter and select Convert Passive voice to active.
+        The sentence should be converted to The support team solved... -->
+        <p>The issue has been solved by the support team.</p>
+    </chapter>
+    <chapter id="contr" title="Contractions">
+        <p>Grazie Professional can expand the contracted word to the full version.</p>
+        <!--Step on the contracted word, press Alt+Enter and select Expand contracted form into full one | Only here/Everywhere in the document.-->
+        <p>They'd leave before it was time to clean up.</p>
+    </chapter>
+    <chapter id="move-parts" title="Move sentence parts">
+        <p>Grazie Professional can help you move similar parts of a sentence around, such as predicates and
+            compliments divided by a conjunction or a comma.</p>
+        <!--Step on the 'verbs', press Alt+Enter and select Move left or Move right.
+        The order in the list should be changed accordingly.-->
+        <p>The items can be any type of grammatical unit, such as nouns, verbs, participles, infinitives, or subordinate clauses, to name a few.
+        </p>
+    </chapter>
+</chapter>
+<chapter id="definition" title="Definitions">
+    <p>Grazie Professional can show you the definition of any word or phrase taking the context into account.
+        For example, it should be able to distinguish where python is mentioned as a snake, a programming language, or a member of the Monty Python comedy troupe.
+    </p>
+    <!--        Below Grazie should display the jar definition, trigger the context action to check it. -->
+    <p>To access a file in a jar you have two options: place the file in directory structure matching your package name (after extracting . jar file, it should be in the same directory as the project
+        or place the file at the root (after extracting . jar file, it should be in the root), then access it using Thread.
+    </p>
+</chapter>
+<chapter id="styleguides" title="Build-in style guides">
+    <p>Grazie Professional provides an ability to switch on and off some rules from industry-wide style guides,
+        like Microsoft, Google, and more. </p>
+</chapter>
+<chapter title="Create a project-level style guide" id="create-styleguide">
+    <p>Grazie Professional lets you automate checks against various styles guides, including your own,
+        by configuring rules using Vale syntax.</p>
+    <p>Right-click the project name and select New | Grazie Professional Rule File.</p>
+    <p>Grazie Professional creates the .grazie.en.yml file in the project root.
+        This file extends the Vale syntax and applies to all files in every project directory.
+    </p>
+    <p>In this project we have a minimal .grazie.en.yml file.
+        It has a rule that triggers on the word `kitty` and offers to use `cat` instead.</p>
+    <p>Hello kitty is a nice movie.</p>
+</chapter>
+<chapter id="honor-select" title="Honor sentence structure on selection">
+    <p>Grazie Professional takes the sentence structure into account when extending or shrinking the selection.</p>
+    <p>Enable <control>Honor sub-phrases on Extend Selection</control>, then press <control>Ctrl + W</control> on Windows/Linux and <control>Alt + Up</control> on macOS, to use Extend Selection.</p>
+</chapter>
+<chapter id="translation" title="ML-based translation ">
+    <p>Grazie Professional translates sentences between English, German, Chinese, Korean, and Japanese. You can select a specific fragment or place a caret anywhere in the text you want to translate.</p>
+    <p>Select the fragment, press Alt+Enter, select Translate with Grazie and the language.</p>
+    <!--       The sentence below should be translated from Chinese to English as The translation is incorrect.-->
+    <p>这句话的翻译不正确.</p>
+</chapter>
+
+</topic>
