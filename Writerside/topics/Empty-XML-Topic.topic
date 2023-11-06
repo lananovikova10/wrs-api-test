@@ -5,6 +5,15 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Empty XML Topic" id="Empty-XML-Topic">
 
+    <snippet id="TestReuseElement">
+        <if filter="test">
+            <p filter="test">Test111</p>
+            <a>Test222</a>
+        </if>
+        <if filter="nottest">
+            <p>not test</p>
+        </if>
+    </snippet>
 <p>This topic contains examples for Grazie Professional features.</p>
 <chapter id="gec" title="Grammar correction">
     <p id="grammar-error-correction">Although LanguageTool is a great engine for catching grammar and stylistic mistakes, it is rule-based, meaning that it depends on a set of rules that humans define.
@@ -14,18 +23,28 @@
     <p id="grammar-error-simple">I am see people. This people big.</p>
     <!--Below Grazie should detect the incorrect hyphenation.-->
     <p id="grammar-error-complex">Grazie is to improved the quality of grammar error correction.
-        It might be a destination you stumbled across on a must see list on a travel blog or heard was a can't miss landmark.</p>
+        Это может быть место, где вы застрелились на список must - see в блоге по путешествиям или слышали, что это не может пропустить.</p>
     <!--Below Grazie should detect 3 spelling errors-->
     <p id="spelling">Grazie also detects spelling errors and mistypes. For example, arguement, absense, adress. </p>
+    <p>
+        In the previous example, Grazie Pro will convert The issue has been solved by the support team to The support team has solved the issue.
+    </p>
 </chapter>
+    <a id="题目"/>
 <chapter id="completion" title="Natural language completion">
     <p>Grazie Professional takes the context of what you have written before and suggests words, phrases, or even whole sentences as you type. It works as an invisible writing assistant and helps you remove writer's block or get an alternative view on the subject.
     </p>
+    <p>You may wonder what Grazie means? </p>
     <p>So when you put the cursor after the previous word it should display the suggestion either in the line
         or in the drop-down, depending on selected setting, and complete the suggestion by Tab. Both modes should work in
         <path>
             .topic
         </path> files.</p>
+    <p>Guys, one may ask me what Grazie means? I will explain. Me thinks that this is correct.
+        He is definitely right. And it is a man-made thing.</p>
+    <p>
+        Ho
+    </p>
 </chapter>
 <chapter id="POS-highligting" title="Part-of-speech highlighting">
     <p><control>Trim and tighten</control>: You can employ syntax highlighting which helps you spot weak verbs, unwanted repetitions, and eliminate clutter.
@@ -49,6 +68,8 @@
         <!--Step on the verb, press Alt+Enter and select Convert Passive voice to active.
         The sentence should be converted to The support team solved... -->
         <p>The issue has been solved by the support team.</p>
+        <p>In the previous example, Grazie Pro will convert The issue has been solved by the support team to The support team has solved the issue.</p>
+
     </chapter>
     <chapter id="contr" title="Contractions">
         <p>Grazie Professional can expand the contracted word to the full version.</p>
@@ -86,7 +107,7 @@
     </p>
     <p>In this project we have a minimal .grazie.en.yml file.
         It has a rule that triggers on the word `kitty` and offers to use `cat` instead.</p>
-    <p>Hello kitty is a nice movie.</p>
+    <p>Hello Kitty is a nice movie.</p>
 </chapter>
 <chapter id="honor-select" title="Honor sentence structure on selection">
     <p>Grazie Professional takes the sentence structure into account when extending or shrinking the selection.</p>

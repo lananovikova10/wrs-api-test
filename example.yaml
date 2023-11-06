@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info:
+  title: Big Red Cloud API
+  version: v1
+  description: |
+    Welcome to the Big Red Cloud API. This API enables programmatic access to Big Red Cloud data.
+    To get started, you will require an API Key - check out our guide at [API Key Guide](https://www.bigredcloud.com/support/generating-api-key-guide/) for information on how to get one.
+    For additional information on the API, check out our support article at [API Documentation](https://www.bigredcloud.com/support/api/).
+
+servers:
+  - url: https://app.bigredcloud.com/api
+
+paths:
+  /example:
+    get:
+      summary: Get an example
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Example'
+
+  /another_example:
+    get:
+      summary: Get another example
+      responses:
+        200:
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnotherExample'
+
+components:
+  schemas:
+    Example:
+      type: object
+      properties:
+        data1:
+          type: array
+          items:
+            type: string
+          example: ["data 1 example"]
+        data2:
+          type: array
+          items:
+            type: string
+          example: ["data 2.1", "data 2.2"]
+        data3:
+          type: array
+          items:
+            type: string
+          example: ["data 3.1", "data 3.2", "data 3.3"]
+
+    AnotherExample:
+      type: object
+      properties:
+        field1:
+          type: string
+          example: "Field 1 example"
+        field2:
+          type: integer
+          example: 42

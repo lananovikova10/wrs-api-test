@@ -7,6 +7,8 @@ Start with a summary of what this reference article is about, and what the items
 
 ## Command
 
+<include from="lib.md" element-id="reuse"/>
+
 Syntax:
 
 ```shell
@@ -15,9 +17,7 @@ cmd [OPTIONS]
 
 ## API 
 
-<api-endpoint openapi-path="./../openapi.yaml" endpoint="/v1/accounts" method="GET"/>
-
-
+<api-doc openapi-path="./../../example.yaml"/>
 
 <seealso>
     <!--Provide links to related how-to guides, overviews, and tutorials.-->

@@ -6,4 +6,19 @@
        title="Structural wrapping" id="Structural-wrapping">
 
     <p>Start typing here...</p>
+
+    <a href="test.md" anchor="题目"/>
+
+    <p>
+        <code>some command</code>
+    </p>
+    <p></p>
+    <code-block lang="bash">
+        some command
+    </code-block>
+    <chapter title="Test" use-filter="test">
+
+    </chapter>
+    <include from="Empty-XML-Topic.topic" element-id="TestReuseElement" use-filter="test"/>
 </topic>
+

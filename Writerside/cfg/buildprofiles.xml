@@ -7,6 +7,7 @@
         <product-web-url>https://spinsha.re/</product-web-url>
         <header-logo>birdie.png</header-logo>
         <custom-favicons>hhh</custom-favicons>
+        <remark-comments>true</remark-comments>
         <versions-switcher>https://raw.githubusercontent.com/lananovikova10/plugin-help/main/help-versions.json</versions-switcher>
     </variables>
     <build-profile instance="h">
@@ -14,6 +15,9 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
+    <footer>
+        <social type="twitter" href="http://x.com/_unsolved_"></social>
+    </footer>
 
 
 </buildprofiles>

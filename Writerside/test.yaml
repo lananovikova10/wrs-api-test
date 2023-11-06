@@ -1,0 +1,51 @@
+openapi: 3.0.1
+info:
+  title: Sample API
+  description: API description in Markdown.
+  version: 1.0.0
+servers:
+  - url: 'https://api.example.com'
+paths:
+  /test:
+    post:
+      summary: Testing one of.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TestParent'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/json':
+              schema:
+                $ref: '#/components/schemas/TestParent'
+
+components:
+  schemas:
+    TestParent:
+      type: object
+      properties:
+        test:
+          oneOf:
+            - $ref: '#/components/schemas/TestBase'
+            - $ref: '#/components/schemas/TestImpl1'
+            - $ref: '#/components/schemas/TestImpl2'
+    TestBase:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+      discriminator:
+        propertyName: type
+    TestImpl1:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/TestBase'
+    TestImpl2:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/TestBase'
