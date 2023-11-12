@@ -5,8 +5,7 @@
     <variables>
         <web-root>https://domain.com/</web-root>
         <product-web-url>https://spinsha.re/</product-web-url>
-        <header-logo>birdie.png</header-logo>
-        <custom-favicons>hhh</custom-favicons>
+        <header-logo>Twitter_logo-copy-2.png</header-logo>
         <remark-comments>true</remark-comments>
         <versions-switcher>https://raw.githubusercontent.com/lananovikova10/plugin-help/main/help-versions.json</versions-switcher>
     </variables>
@@ -18,6 +17,11 @@
     <footer>
         <social type="twitter" href="http://x.com/_unsolved_"></social>
     </footer>
+    <build-profile instance="fs">
+        <variables>
+            <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
 
 
 </buildprofiles>

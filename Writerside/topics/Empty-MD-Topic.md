@@ -98,10 +98,18 @@ context into account. For example, it should be able to distinguish where python
 is mentioned as a snake, a programming language, or a member of the Monty Python
 comedy troupe.
 
+ghghghg
+
 To access a file in a jar you have two options: place the file in directory
 structure matching your package name (after extracting . jar file, it should be
 in the same directory as the project or place the file at the root (after
 extracting . jar file, it should be in the root), then access it using Thread.
+
+|   |   |   |
+|---|---|---|
+|   |   |   |
+|   |   |   |
+
 
 ## Build-in style guides
 
@@ -145,3 +153,7 @@ language.
 
 Guys, one may ask me, what Grazie means? I will explain.
 He is definitely right.
+
+<code-block>
+[](<footer></footer>)
+</code-block>

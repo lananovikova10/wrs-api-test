@@ -5,16 +5,28 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Empty XML Topic" id="Empty-XML-Topic">
 
-    <snippet id="TestReuseElement">
-        <if filter="test">
-            <p filter="test">Test111</p>
-            <a>Test222</a>
-        </if>
-        <if filter="nottest">
-            <p>not test</p>
-        </if>
-    </snippet>
-<p>This topic contains examples for Grazie Professional features.</p>
+    This command has the following options:
+    <list>
+        <li>Do this.</li>
+        <li>Do that.</li>
+    </list>
+
+    <procedure title="Process">
+        <step>
+            Do this.
+            <procedure title="Subprocess">
+                <step>
+                    Text.
+                </step>
+                <step>
+                    Text.
+                </step>
+            </procedure>
+        </step>
+    </procedure>
+
+
+    <p>This topic contains examples for Grazie Professional features.</p>
 <chapter id="gec" title="Grammar correction">
     <p id="grammar-error-correction">Although LanguageTool is a great engine for catching grammar and stylistic mistakes, it is rule-based, meaning that it depends on a set of rules that humans define.
         By properly training our GEC model, we've managed to outperform LanguageTool and catch a lot more mistakes.</p>
@@ -30,8 +42,7 @@
         In the previous example, Grazie Pro will convert The issue has been solved by the support team to The support team has solved the issue.
     </p>
 </chapter>
-    <a id="题目"/>
-<chapter id="completion" title="Natural language completion">
+    <chapter id="completion" title="Natural language completion">
     <p>Grazie Professional takes the context of what you have written before and suggests words, phrases, or even whole sentences as you type. It works as an invisible writing assistant and helps you remove writer's block or get an alternative view on the subject.
     </p>
     <p>You may wonder what Grazie means? </p>

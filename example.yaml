@@ -26,7 +26,7 @@ paths:
     get:
       summary: Get another example
       responses:
-        200:
+        100:
           description: Successful response
           content:
             application/json:

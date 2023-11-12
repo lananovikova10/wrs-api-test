@@ -2,5 +2,5 @@
 {is-library="true"}
 
 <snippet id="reuse">
-This
+This paragraph is included.
 </snippet>

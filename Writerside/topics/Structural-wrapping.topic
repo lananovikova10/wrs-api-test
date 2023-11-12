@@ -20,5 +20,7 @@
 
     </chapter>
     <include from="Empty-XML-Topic.topic" element-id="TestReuseElement" use-filter="test"/>
+    <p>ghghg</p>
+
 </topic>
 
