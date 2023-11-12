@@ -38,8 +38,8 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: <project-name>
-          directory: <directory>
+          projectName: wrs-lananovikova
+          directory: cf-pages
           branch: main
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: 'beta'
